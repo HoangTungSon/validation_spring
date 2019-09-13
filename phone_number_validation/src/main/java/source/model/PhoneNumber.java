@@ -42,11 +42,4 @@ public class PhoneNumber implements Validator {
             errors.rejectValue("number","number.matches");
         }
     }
-
-    @Bean
-    public MessageSource messageSource() {
-        ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-        messageSource.setBasenames("ValidationMessages");
-        return messageSource;
-    }
 }
